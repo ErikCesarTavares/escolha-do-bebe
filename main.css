@@ -1,28 +1,107 @@
-*{
+.dancing-script-title {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.lato-thin-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.lato-black-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.playfair-display-header {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.playfair-display-subheader {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.playfair-display-button {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header,
-section h2,
-section h3,
-form button {
-    font-family: "Bungee", sans-serif;
-    font-weight: normal;
-    font-style: normal;
-}
-
-body, input, textarea {
-    font-family: "Roboto", system-ui;
-    font-weight: 400;
-    font-style: normal;
+body {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: "Lato", sans-serif;
 }
 
 header {
-    padding: 16px 0; 
-    background-color: #182C61;
-    color: #ecf0f1;
+    padding: 16px 0;
+    background-color: #FFB6C1;
+    color: #ffffff;
 }
 
 header nav li {
@@ -32,7 +111,7 @@ header nav li {
 }
 
 header nav li a {
-    color: #ecf0f1;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -49,17 +128,30 @@ section .container {
     justify-content: space-between;
 }
 
-.brands-list img {
-    height: 24px;
+.example-names {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 16px;
 }
 
-.brands-list li {
-    display: inline;
-    margin-right: 8px;
+.example-names li {
+    text-align: center;
+    width: 300px;
+    background-color: #f8f8f8;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.example-names img {
+    height: 100px;
+    margin-bottom: 8px;
 }
 
 section .container {
-    align-items: self-start;
+    align-items: flex-start;
 }
 
 section {
@@ -70,16 +162,17 @@ section h2 {
     margin-bottom: 16px;
 }
 
-section {
-    color: #182C61;
-}
-
 section p {
     margin-bottom: 8px;
 }
 
-.store-front {
+.name-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     margin-right: 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .social-links img {
@@ -102,15 +195,20 @@ section p {
 .contact-methods {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 form input,
 form textarea,
 form button {
     display: block;
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     margin-bottom: 8px;
     padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-family: "Lato", sans-serif;
 }
 
 form textarea {
@@ -123,22 +221,34 @@ section h3 {
 }
 
 form button {
-    background-color: #182C61;
-    color:#ecf0f1;
+    background-color: #FF69B4;
+    color: #ffffff;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.playfair-display-button {
+    /* deixei esse estilo para usar quando necessário */
 }
 
 form button:hover {
-    background-color: #314e9e;
+    background-color: #FF1493;
 }
 
-input:focus, textarea:focus {
-    outline-color: #182C61;
+input:focus,
+textarea:focus {
+    outline-color: #FF69B4;
 }
 
 footer {
-    background-color: #182C61;
-    color:#ecf0f1;
+    background-color: #FFB6C1;
+    color: #ffffff;
     padding: 16px 0;
+    text-align: center;
+}
+
+footer .container p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
 }

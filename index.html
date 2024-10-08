@@ -3,63 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games Shop - A sua loja de games</title>
+    <title>Escolha do Bebê - Encontre o Nome Perfeito</title>
     <link rel="stylesheet" href="./main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Games Shop</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about">Sobre a loja</a>
-                </li>
-                <li>
-                    <a href="#contact">Contato</a>
-                </li>
-            </ul>
-        </nav>
+            <h1 class="playfair-display-header">Escolha do Bebê</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#about" class="lato-bold">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="lato-bold">Contato</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
     <section id="about">
         <div class="container">
-            <img class="store-front" src="./images/loja.jpg" alt="Fachada da loja Games Shop" />
+            <img class="name-image" src="./images/baby_names.jpg" alt="Nomes de Bebês" />
             <div>
-                <h2>Sobre a loja</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cupiditate ipsa dolore quae, molestiae odio blanditiis, reiciendis ipsum distinctio delectus id in, adipisci quisquam ducimus quasi sequi voluptatibus officia obcaecati.
+                <h2 class="playfair-display-subheader">Encontre o Nome Perfeito para o Seu Bebê</h2>
+                <p class="lato-regular">
+                    Escolher o nome do seu bebê é uma decisão especial e significativa. Aqui, você encontra sugestões de nomes, significados, origens, variações e tendências para ajudar na escolha perfeita.
                 </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos voluptas asperiores numquam, quia illum doloribus quas ab, corrupti recusandae accusamus sit! Laudantium non ullam quaerat iure esse ea velit sint?
+                <p class="lato-regular">
+                    Explore nossa lista de nomes populares, clássicos e únicos para encontrar aquele que ressoa com você e sua família.
                 </p>
-                <ul class="brands-list">
-                    <li><img src="./images/nintendo.png" alt="Nintendo" /></li>
-                    <li><img src="./images/xbox.png" alt="Xbox" /></li>
-                    <li><img src="./images/playstation.png" alt="Playstation" /></li>
+                <ul class="example-names">
+                    <li>
+                        <img src="./images/nicole.png" alt="Nome Nicole" />
+                        <h3 class="playfair-display-subheader">Nicole</h3>
+                        <p><strong>Significado:</strong> Vitória do povo.</p>
+                        <p><strong>Origem:</strong> Grega.</p>
+                        <p><strong>Variações:</strong> Nicolle, Nicolette, Nicol.</p>
+                        <p><strong>Popularidade:</strong> Muito popular nos países de língua inglesa e também em países de língua portuguesa.</p>
+                    </li>
+                    <li>
+                        <img src="./images/olivia.png" alt="Nome Olivia" />
+                        <h3 class="playfair-display-subheader">Olivia</h3>
+                        <p><strong>Significado:</strong> Oliveira, símbolo de paz.</p>
+                        <p><strong>Origem:</strong> Latina.</p>
+                        <p><strong>Variações:</strong> Olive, Olivea, Olivie.</p>
+                        <p><strong>Popularidade:</strong> Um dos nomes mais populares em diversos países nos últimos anos, incluindo Brasil, Estados Unidos e Reino Unido.</p>
+                    </li>
                 </ul>
             </div>
         </div>
     </section>
     <section id="contact">
         <div class="container">
-            <h2>Contato</h2>
+            <h2 class="playfair-display-subheader">Contato</h2>
             <div class="contact-methods">
                 <div>
-                    <h3>Fale conosco</h3>
+                    <h3 class="playfair-display-subheader">Fale conosco</h3>
                     <form>
-                        <input type="text" placeholder="Seu nome" required />
-                        <input type="email" placeholder="Seu e-mail" required />
-                        <input type="tel" placeholder="Seu telefone (opcional)" />
-                        <textarea placeholder="Sua mensagem" required></textarea>
-                        <button type="submit">Enviar</button>
+                        <input type="text" placeholder="Seu nome" class="lato-regular" required />
+                        <input type="email" placeholder="Seu e-mail" class="lato-regular" required />
+                        <input type="tel" placeholder="Seu telefone (opcional)" class="lato-regular" />
+                        <textarea placeholder="Sua mensagem" class="lato-regular" required></textarea>
+                        <button type="submit" class="playfair-display-button">Enviar</button>
                     </form>
                 </div>
                 <div>
-                    <h3>Nos acompanhe</h3>
+                    <h3 class="playfair-display-subheader">Nos acompanhe</h3>
                     <ul class="social-links">
                         <li>
                             <a href="#" title="Siga-nos no Instagram">
@@ -67,12 +80,11 @@
                             </a>
                         </li>
                         <li>
-                            <li>
-                                <a href="#" title="Siga-nos no Facebook">
-                                    <img src="./images/facebook.png" alt="Logo do Facebook" />
-                                </a>
-                            </li>
+                            <a href="#" title="Siga-nos no Facebook">
+                                <img src="./images/facebook.png" alt="Logo do Facebook" />
+                            </a>
                         </li>
+                        <li>
                             <a href="#" title="Visite nosso canal no Youtube">
                                 <img src="./images/youtube.png" alt="Logo do Youtube" />
                             </a>
@@ -80,9 +92,9 @@
                     </ul>
                 </div>
                 <div>
-                    <h3>Venha até nós</h3>
-                    <p>
-                        Rua JavaScript nº 124, Vila HTML - São Paulo - SP
+                    <h3 class="playfair-display-subheader">Venha até nós</h3>
+                    <p class="lato-regular">
+                        Rua dos Sonhos nº 100, Bairro Feliz - Rio de Janeiro - RJ
                     </p>
                 </div>
             </div>
@@ -90,8 +102,8 @@
     </section>
     <footer>
         <div class="container">
-            <p>
-                &copy; Games Shop - Todos os direitos reservados - 2024
+            <p class="lato-regular">
+                &copy; Escolha do Bebê - Todos os direitos reservados - 2024
             </p>
         </div>
     </footer>
