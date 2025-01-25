@@ -47,6 +47,15 @@ A aplicação **Escolha do Bebê** foi criada para proporcionar uma experiência
 
 ---
 
+## 🌍 Acesse o Projeto
+
+Você pode acessar o projeto online clicando no link abaixo:
+
+[👉 Escolha do Bebê 🌟](https://escolha-do-bebe.vercel.app/)
+
+
+---
+
 ## 🧠 Como Usar
 
 ### Passo 1: Clone o repositório
